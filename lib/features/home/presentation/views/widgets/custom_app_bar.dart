@@ -1,4 +1,6 @@
+import 'package:bookly/core/utils/app_router.dart';
 import 'package:flutter/material.dart';
+import 'package:go_router/go_router.dart';
 
 import '../../../../../core/utils/asset.dart';
 
@@ -14,7 +16,9 @@ class CustomAppBar extends StatelessWidget {
           Image.asset(AssetsData.logo,width: 100,height: 18,),
           const Spacer(),
           IconButton(
-              onPressed: (){},
+              onPressed: (){
+                GoRouter.of(context).push(AppRouter.kSearchViewBody);
+              },
               icon: const Icon(Icons.search,size: 26,))
         ],
       ),
