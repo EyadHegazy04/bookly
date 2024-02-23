@@ -1,4 +1,4 @@
-import 'package:bookly/features/home/presention/views/widgets/similar_books_section.dart';
+import 'package:bookly/features/home/presentation/views/widgets/similar_books_section.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
