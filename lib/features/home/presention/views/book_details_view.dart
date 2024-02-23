@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'widgets/book_details_view_bode.dart';
+import 'widgets/book_details_view_body.dart';
 
 class BookDetailsView extends StatelessWidget {
   const BookDetailsView({super.key});
@@ -8,7 +8,7 @@ class BookDetailsView extends StatelessWidget {
   Widget build(BuildContext context) {
     return const Scaffold(
       body: SafeArea(
-          child: BookDetailsViewBode(),
+          child: BookDetailsViewBody(),
       ),
     );
   }
