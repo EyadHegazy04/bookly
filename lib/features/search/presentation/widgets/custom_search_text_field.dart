@@ -14,9 +14,9 @@ class CustomSearchTextField extends StatelessWidget {
         hintText: 'Search',
         suffixIcon: IconButton(
           onPressed: () {},
-          icon:const  Opacity(
+          icon: const Opacity(
             opacity: .7,
-            child:  Icon(
+            child: Icon(
               Icons.search,
               size: 22,
             ),
@@ -28,9 +28,9 @@ class CustomSearchTextField extends StatelessWidget {
 
   OutlineInputBorder buildOutlineInputBorder() {
     return OutlineInputBorder(
-        borderSide: const BorderSide(color: Colors.white),
-        borderRadius: BorderRadius.circular(12),
-      );
+      borderSide: const BorderSide(color: Colors.white),
+      borderRadius: BorderRadius.circular(12),
+    );
   }
 }
 
@@ -41,13 +41,12 @@ class SearchResultListView extends StatelessWidget {
   Widget build(BuildContext context) {
     return ListView.builder(
         padding: EdgeInsets.zero,
-        itemCount: 10 ,
-        itemBuilder: (context , index){
+        itemCount: 10,
+        itemBuilder: (context, index) {
           return const Padding(
-            padding:  EdgeInsets.symmetric(vertical: 10),
+            padding: EdgeInsets.symmetric(vertical: 10),
             child: BookListViewItem(),
           );
-        }
-    );
+        });
   }
 }

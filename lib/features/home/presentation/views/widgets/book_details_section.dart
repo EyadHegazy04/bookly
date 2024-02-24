@@ -1,4 +1,3 @@
-
 import 'package:flutter/material.dart';
 
 import '../../../../../core/utils/styles.dart';
@@ -12,7 +11,7 @@ class BookDetailsSection extends StatelessWidget {
   Widget build(BuildContext context) {
     var width = MediaQuery.of(context).size.width;
 
-    return  Column(
+    return Column(
       children: [
         Padding(
           padding: EdgeInsets.symmetric(horizontal: width * .27),
@@ -32,15 +31,16 @@ class BookDetailsSection extends StatelessWidget {
           opacity: .7,
           child: Text(
             "Rudyard Kipling  ",
-            style: Styles.textStyle18.copyWith(fontStyle:FontStyle.italic,
-
-                fontWeight: FontWeight.w800),
+            style: Styles.textStyle18.copyWith(
+                fontStyle: FontStyle.italic, fontWeight: FontWeight.w800),
           ),
         ),
         const SizedBox(
           height: 12,
         ),
-        const BookRating(mainAxisAlignment: MainAxisAlignment.center,),
+        const BookRating(
+          mainAxisAlignment: MainAxisAlignment.center,
+        ),
       ],
     );
   }
